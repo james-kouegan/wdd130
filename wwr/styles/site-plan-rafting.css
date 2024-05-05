@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+body{
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+:root{
+    --primary-color:#a3b18a;
+    --secodary-color:#805781;
+    --accent1-color:#818057;
+    --accent2-color:#588157;
+    --nav-background-color:#dda15e;
+    --nav-link-color:#fefae0;
+    --nav-hover-link-colorr:#3f405e;
+    --nav-honer-background-color:#009712;
+    --heading-font:'Georgia',serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+header{
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+p{
+    padding: 25px;
+}
+nav{
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+nav a{
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+nav a:link, nav a:visited{
+    color: var(--var-link-color);
+}
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--mav-honor-background-color);
+}
