@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan+SC&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+*{
+  margin: 1%;
+  padding: 0%;
+}
+
+body{
+    font-family: 'Releway' sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    color: brown;
+}
+.hero{
+    position: relative;
+}
+article{
+    position: absolute;
+    top: 70%;
+    right: 20%;
+    background: rgba(113, 169, 122, 0.5);
+    align-items: auto;
+    display: flex;
+
+}
+.hero h1{
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    background-color:  rgba(113, 169, 122, 0.5);
+    color: rgb(239, 242, 245);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+article p{
+    color: rgb(255, 255, 255);
+}
