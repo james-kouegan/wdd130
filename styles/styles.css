@@ -70,6 +70,7 @@ aside{
     color: #333;
     text-align: center;
     grid-column: 9 / -1;
+    position: relative;
 }
 
 footer{
@@ -81,8 +82,9 @@ footer{
 
 
 aside img{
-    width: 80%;
+    width: 100%;
     height: auto;
+    margin-bottom: calc(var(--space) * 2) ;
 }
 main img{
     width: 150px;
@@ -106,5 +108,9 @@ aside{
     text-align: center;
 }
 aside h2{
-    margin-bottom: calc(var(--space) * 2);
+    margin: calc(var(--space) * 1.5) ;
+    padding: calc(var(--space) * 0.5) ;
+    position: absolute;
+    background-color: #ffffff99;
+    border-radius: calc(var(--space) * 1)  ;
 }
