@@ -2,6 +2,7 @@
 body{
     font-family: var(--paragraph-font);
     max-width: 960px;
+    margin: auto;
     padding: 20px;
 }
 
@@ -28,9 +29,9 @@ body{
     --nav-hover-link-color: #3f405e; /* Nav link hover color */
     --nav-honer-background-color: #009712; /* Nav hover background */
     --heading-font: 'Georgia', serif;
+
+    --white : white;
 }
-
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
@@ -40,6 +41,10 @@ header{
     padding: 20px;
     background-color: var(--accent1-color);
 }
+
+header, header h1  {
+    color: var(--white);
+} 
 p{
     padding: 25px;
 }
