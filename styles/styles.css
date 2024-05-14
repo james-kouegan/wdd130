@@ -1,5 +1,6 @@
 :root{
     --space: 10px;
+    --primary-color: #0039a6;
 }
 
 * {
@@ -9,7 +10,7 @@
 }
 
 nav{
-    background-color: steelblue;
+    background-color: var(--primary-color);
     padding: var(--space);
     display: flex;
     justify-content: center;
@@ -29,12 +30,12 @@ nav a:hover{
 
 
 h1{
-    color: steelblue;
+    color: var(--primary-color);
 }
 img{
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--primary-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -96,7 +97,7 @@ p{
 .box{
     margin: var(--space);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: var(--space);
+    padding: calc(var(--space) * 2);
     /*background-color: #ddd;*/
     color: #000;
 }
@@ -105,7 +106,5 @@ aside{
     text-align: center;
 }
 aside h2{
-    position: absolute;
-    top: 47px;
-    left: 150px;
+    margin-bottom: calc(var(--space) * 2);
 }
