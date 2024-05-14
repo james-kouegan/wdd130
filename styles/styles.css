@@ -1,3 +1,7 @@
+:root{
+    --space: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +10,24 @@
 
 nav{
     background-color: steelblue;
-    padding: 10px;
+    padding: var(--space);
+    display: flex;
+    justify-content: center;
+    gap: var(--space);
+    width: 100%;
 }
 nav a{
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
 }
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
 h1{
     color: steelblue;
 }
@@ -24,35 +39,40 @@ img{
     box-shadow: 0 0 30px gray;
 }
 p{
-    padding: 10px;
+    padding: var(--space);
 }
 
 body{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 5px;
+    gap: var(--space);
+    grid-template-columns: repeat(12 , 1fr);
 }
 
 header{
     display: flex;
-    grid-area: 1 / 1 / 2 / 4;
+    grid-column: 1 / -1;
+    width: 100%;
 }
 
 main{
-    max-width: 840px;
+    grid-column: 1 / 9;
+    padding:  var(--space);
+    margin:  var(--space);
+    width: calc(100% - 4*var(--space));
+    min-height: 70vh;
 }
 aside{
-    width: 20rem;
-    margin: 1rem;
+    width: calc(100% - 4*var(--space));
+    margin: var(--space);
     border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
+    padding: var(--space);
     color: #333;
     text-align: center;
+    grid-column: 9 / -1;
 }
 
 footer{
+    grid-column: 1 / -1;
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
@@ -60,7 +80,7 @@ footer{
 
 
 aside img{
-    width: 200px;
+    width: 80%;
     height: auto;
 }
 main img{
@@ -74,14 +94,14 @@ p{
 
 /*Class selectors*/
 .box{
-    margin: 1rem;
+    margin: var(--space);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    background-color: #ddd;
+    padding: var(--space);
+    /*background-color: #ddd;*/
     color: #000;
 }
 aside{
-    width: 20em;
+    
     text-align: center;
 }
 aside h2{
