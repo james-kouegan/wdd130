@@ -22,7 +22,6 @@ article{
     top: 70%;
     right: 30%;
     background: rgba(113, 169, 122, 0.5);
-    align-items: auto;
     display: flex;
 
 }
@@ -37,3 +36,55 @@ article{
 article p{
     color: rgb(255, 255, 255);
 }
+/*header{
+    display: grid;
+    grid-template-columns: 400px  2fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+    background-color: #ccc;
+}
+nav{
+    display: flex;
+    list-style: none;
+}*/
+header {
+    display: grid;
+    grid-template-columns: 400px 1fr; /* Logo prend la largeur minimale, le reste est flexible */
+    align-items: center; /* Centre les éléments verticalement */
+    gap: 20px; /* Espacement entre les éléments */
+}
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  .adventure-images {
+    display: flex;
+    gap: 20px;
+}
+.adventure-images img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+  
+  .adventure-images p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  body{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
